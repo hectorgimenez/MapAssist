@@ -25,8 +25,8 @@ namespace MapAssist
 
         private static ConfigEditor configEditor;
         private static NotifyIcon trayIcon;
-        private static Overlay overlay;
-        private static BackgroundWorker backWorkOverlay = new BackgroundWorker();
+        private static GrpcService grpcService;
+        private static BackgroundWorker backWorkerGrpcServer = new BackgroundWorker();
         private static IKeyboardMouseEvents globalHook = Hook.GlobalEvents();
         private static readonly Logger _log = LogManager.GetCurrentClassLogger();
 
@@ -123,7 +123,7 @@ namespace MapAssist
                         Visible = true
                     };
 
-                    globalHook.KeyDown += (sender, args) =>
+                    /*globalHook.KeyDown += (sender, args) =>
                     {
                         if (overlay != null)
                         {
@@ -133,7 +133,11 @@ namespace MapAssist
 
                     backWorkOverlay.DoWork += new DoWorkEventHandler(RunOverlay);
                     backWorkOverlay.WorkerSupportsCancellation = true;
-                    backWorkOverlay.RunWorkerAsync();
+                    backWorkOverlay.RunWorkerAsync();*/
+
+                    backWorkerGrpcServer.DoWork += new DoWorkEventHandler(RunGrpcServer);
+                    backWorkerGrpcServer.WorkerSupportsCancellation = true;
+                    backWorkerGrpcServer.RunWorkerAsync();
 
                     GameManager.OnGameAccessDenied += (_, __) =>
                     {
@@ -155,11 +159,19 @@ namespace MapAssist
             }
         }
 
-        public static void RunOverlay(object sender, DoWorkEventArgs e)
+        /*public static void RunOverlay(object sender, DoWorkEventArgs e)
         {
             using (overlay = new Overlay())
             {
                 overlay.Run();
+            }
+        }*/
+
+        public static void RunGrpcServer(object sender, DoWorkEventArgs e)
+        {
+            using (grpcService = new GrpcService())
+            {
+                grpcService.runServer();
             }
         }
 
@@ -296,9 +308,7 @@ namespace MapAssist
         {
             _log.Info("Disposing");
 
-            overlay.Dispose();
-            _log.Info("Disposed Overlay");
-
+            // overlay.Dispose();
             GameManager.Dispose();
             _log.Info("Disposed GameManager");
 
@@ -311,10 +321,16 @@ namespace MapAssist
             trayIcon.Dispose();
             _log.Info("Disposed tray icon");
 
-            if (backWorkOverlay.IsBusy)
+            grpcService.Dispose();
+            _log.Info("Disposed grpc server");
+
+            /*if (backWorkOverlay.IsBusy)
             {
                 backWorkOverlay.CancelAsync();
-                _log.Info("Cancelled overlay background worker");
+            }*/
+            if (backWorkerGrpcServer.IsBusy)
+            {
+                backWorkerGrpcServer.CancelAsync();
             }
 
             mutex.Dispose();

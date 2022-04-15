@@ -85,7 +85,7 @@ namespace MapAssist.Helpers
                     if (process.ProcessName != ProcessName) // Not a valid game process
                     {
                         _log.Info($"Active window changed to a non-game window (handle: {hwnd})");
-                        ClearLastGameProcess();
+                        //ClearLastGameProcess();
                         return;
                     }
 

@@ -227,7 +227,7 @@ namespace MapAssist.Helpers
                 var mercList = rawMonsterUnits.Where(x => x.IsMerc).ToArray();
 
                 // Objects
-                var rawObjectUnits = GetUnits<UnitObject>(UnitType.Object, true);
+                var rawObjectUnits = GetUnits<UnitObject>(UnitType.Object, false);
                 foreach (var obj in rawObjectUnits)
                 {
                     obj.Update();
@@ -245,7 +245,7 @@ namespace MapAssist.Helpers
                 var missileList = clientMissileList.Concat(serverMissileList).ToArray();
 
                 // Items
-                var allItems = GetUnits<UnitItem>(UnitType.Item, true).Where(x => x.UnitId < uint.MaxValue).ToArray();
+                var allItems = GetUnits<UnitItem>(UnitType.Item, false).Where(x => x.UnitId < uint.MaxValue).ToArray();
                 var rawItemUnits = new List<UnitItem>();
                 foreach (var item in allItems)
                 {
@@ -352,7 +352,7 @@ namespace MapAssist.Helpers
                 playerUnit.BeltItems = Enumerable.Range(0, 4).Select(i => Enumerable.Range(0, beltSize).Select(j => beltItems.FirstOrDefault(item => item.X == i + j * 4)).ToArray()).ToArray();
 
                 // Unit hover
-                var allUnits = ((UnitAny[])playerList.Values.ToArray()).Concat(monsterList).Concat(mercList).Concat(rawObjectUnits).Concat(rawItemUnits);
+                var allUnits = ((UnitAny[])playerList.Values.ToArray()).Concat(monsterList).Concat(mercList).Concat(rawObjectUnits).Concat(allItems);
 
                 var hoveredUnits = allUnits.Where(x => x.IsHovered).ToArray();
                 if (hoveredUnits.Length > 0) hoveredUnits[0].IsHovered = false;
