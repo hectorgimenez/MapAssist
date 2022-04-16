@@ -2,8 +2,11 @@
 using MapAssist.Helpers;
 using MapAssist.Settings;
 using MapAssist.Types;
+using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
 
 namespace MapAssist.Settings
 {
@@ -16,7 +19,10 @@ namespace MapAssist.Settings
         {
             Default = ConfigurationParser<MapAssistConfiguration>.ParseConfigurationMain(Properties.Resources.Config);
             Loaded = ConfigurationParser<MapAssistConfiguration>.ParseConfigurationMain(Properties.Resources.Config, $"./Config.yaml");
-            Localization.LoadLocalizationFile();
+            var koolocfg = ConfigurationParser<MapAssistConfiguration>.ParseConfigurationFile("./../config/config.yaml");
+
+            Loaded.D2LoDPath = koolocfg.D2LoDPath;
+
             PointOfInterestHandler.UpdateLocalizationNames();
             QualityLevels.LoadQualityLevelsFile();
         }

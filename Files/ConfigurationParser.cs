@@ -26,6 +26,7 @@ namespace MapAssist.Files
                 .WithTypeConverter(new ItemTierYamlTypeConverter())
                 .WithTypeConverter(new SkillTreeYamlTypeConverter())
                 .WithTypeConverter(new SkillsYamlTypeConverter())
+                .IgnoreUnmatchedProperties()
                 .Build();
 
         public static T ParseConfigurationFile(string fileName)

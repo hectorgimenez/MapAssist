@@ -27,7 +27,6 @@ namespace MapAssist
         private static NotifyIcon trayIcon;
         private static GrpcService grpcService;
         private static BackgroundWorker backWorkerGrpcServer = new BackgroundWorker();
-        private static IKeyboardMouseEvents globalHook = Hook.GlobalEvents();
         private static readonly Logger _log = LogManager.GetCurrentClassLogger();
 
         /// <summary>
@@ -123,18 +122,6 @@ namespace MapAssist
                         Visible = true
                     };
 
-                    /*globalHook.KeyDown += (sender, args) =>
-                    {
-                        if (overlay != null)
-                        {
-                            overlay.KeyDownHandler(sender, args);
-                        }
-                    };
-
-                    backWorkOverlay.DoWork += new DoWorkEventHandler(RunOverlay);
-                    backWorkOverlay.WorkerSupportsCancellation = true;
-                    backWorkOverlay.RunWorkerAsync();*/
-
                     backWorkerGrpcServer.DoWork += new DoWorkEventHandler(RunGrpcServer);
                     backWorkerGrpcServer.WorkerSupportsCancellation = true;
                     backWorkerGrpcServer.RunWorkerAsync();
@@ -158,14 +145,6 @@ namespace MapAssist
                 ProcessException(e);
             }
         }
-
-        /*public static void RunOverlay(object sender, DoWorkEventArgs e)
-        {
-            using (overlay = new Overlay())
-            {
-                overlay.Run();
-            }
-        }*/
 
         public static void RunGrpcServer(object sender, DoWorkEventArgs e)
         {
@@ -308,7 +287,6 @@ namespace MapAssist
         {
             _log.Info("Disposing");
 
-            // overlay.Dispose();
             GameManager.Dispose();
             _log.Info("Disposed GameManager");
 
@@ -324,10 +302,6 @@ namespace MapAssist
             grpcService.Dispose();
             _log.Info("Disposed grpc server");
 
-            /*if (backWorkOverlay.IsBusy)
-            {
-                backWorkOverlay.CancelAsync();
-            }*/
             if (backWorkerGrpcServer.IsBusy)
             {
                 backWorkerGrpcServer.CancelAsync();
