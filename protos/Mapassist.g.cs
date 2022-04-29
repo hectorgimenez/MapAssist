@@ -42,28 +42,29 @@ namespace koolo.mapassist.api {
             "bnBjX3Nob3AYAyABKAgSDQoFc3Rhc2gYBCABKAgSEAoId2F5cG9pbnQYBSAB",
             "KAgiIQoNQ29sbGlzaW9uR3JpZBIQCgh3YWxrYWJsZRgBIAMoCCI1CgNOUEMS",
             "DAoEbmFtZRgBIAEoCRIgCglwb3NpdGlvbnMYAiADKAsyDS5hcGkuUG9zaXRp",
-            "b24iawoHTW9uc3RlchIMCgRuYW1lGAEgASgJEh8KCHBvc2l0aW9uGAIgASgL",
+            "b24idwoHTW9uc3RlchIMCgRuYW1lGAEgASgJEh8KCHBvc2l0aW9uGAIgASgL",
             "Mg0uYXBpLlBvc2l0aW9uEg8KB2hvdmVyZWQYAyABKAgSEgoKaW1tdW5pdGll",
-            "cxgEIAMoCRIMCgR0eXBlGAUgASgJImsKBk9iamVjdBIMCgRuYW1lGAEgASgJ",
-            "Eh8KCHBvc2l0aW9uGAIgASgLMg0uYXBpLlBvc2l0aW9uEg8KB2hvdmVyZWQY",
-            "AyABKAgSEgoKc2VsZWN0YWJsZRgEIAEoCBINCgVjaGVzdBgFIAEoCCLHAQoE",
-            "SXRlbRIKCgJpZBgBIAEoBRIfCghwb3NpdGlvbhgCIAEoCzINLmFwaS5Qb3Np",
-            "dGlvbhIMCgRuYW1lGAMgASgJEg8KB2hvdmVyZWQYBCABKAgSDQoFcGxhY2UY",
-            "BSABKAkSDwoHcXVhbGl0eRgGIAEoCRIQCghldGhlcmVhbBgHIAEoCBIYCgVz",
-            "dGF0cxgIIAMoCzIJLmFwaS5TdGF0EhIKCmlkZW50aWZpZWQYCSABKAgSEwoL",
-            "dmVuZG9yX25hbWUYCiABKAkigAEKClBsYXllclVuaXQSDAoEbmFtZRgBIAEo",
-            "CRIfCghwb3NpdGlvbhgCIAEoCzINLmFwaS5Qb3NpdGlvbhIaCgZza2lsbHMY",
-            "AyADKAsyCi5hcGkuU2tpbGwSGAoFc3RhdHMYBCADKAsyCS5hcGkuU3RhdBIN",
-            "CgVjbGFzcxgFIAEoCSIjCgRTdGF0EgwKBG5hbWUYASABKAkSDQoFdmFsdWUY",
-            "AiABKA0iJQoFU2tpbGwSDAoEbmFtZRgBIAEoCRIOCgZwb2ludHMYAiABKA0i",
-            "SAoGQ29ycHNlEgwKBG5hbWUYASABKAkSDwoHaG92ZXJlZBgCIAEoCBIfCghw",
-            "b3NpdGlvbhgDIAEoCzINLmFwaS5Qb3NpdGlvbiKGAQoGU3RhdHVzEgwKBGxp",
-            "ZmUYASABKA0SEAoIbWF4X2xpZmUYAiABKA0SDAoEbWFuYRgDIAEoDRIQCght",
-            "YXhfbWFuYRgEIAEoDRISCgptZXJjX2FsaXZlGAUgASgIEhEKCW1lcmNfbGlm",
-            "ZRgGIAEoDRIVCg1tZXJjX21heF9saWZlGAcgASgNIiAKCFBvc2l0aW9uEgkK",
-            "AXgYASABKAISCQoBeRgCIAEoAjIuCgxNYXBBc3Npc3RBcGkSHgoHR2V0RGF0",
-            "YRIGLmFwaS5SGgkuYXBpLkRhdGEiAEI6WiJnaXRodWIuY29tL2hlY3Rvcmdp",
-            "bWVuZXova29vbG8vYXBpqgITa29vbG8ubWFwYXNzaXN0LmFwaWIGcHJvdG8z"));
+            "cxgEIAMoCRIMCgR0eXBlGAUgASgJEgoKAmlkGAYgASgFImsKBk9iamVjdBIM",
+            "CgRuYW1lGAEgASgJEh8KCHBvc2l0aW9uGAIgASgLMg0uYXBpLlBvc2l0aW9u",
+            "Eg8KB2hvdmVyZWQYAyABKAgSEgoKc2VsZWN0YWJsZRgEIAEoCBINCgVjaGVz",
+            "dBgFIAEoCCLHAQoESXRlbRIKCgJpZBgBIAEoBRIfCghwb3NpdGlvbhgCIAEo",
+            "CzINLmFwaS5Qb3NpdGlvbhIMCgRuYW1lGAMgASgJEg8KB2hvdmVyZWQYBCAB",
+            "KAgSDQoFcGxhY2UYBSABKAkSDwoHcXVhbGl0eRgGIAEoCRIQCghldGhlcmVh",
+            "bBgHIAEoCBIYCgVzdGF0cxgIIAMoCzIJLmFwaS5TdGF0EhIKCmlkZW50aWZp",
+            "ZWQYCSABKAgSEwoLdmVuZG9yX25hbWUYCiABKAkigAEKClBsYXllclVuaXQS",
+            "DAoEbmFtZRgBIAEoCRIfCghwb3NpdGlvbhgCIAEoCzINLmFwaS5Qb3NpdGlv",
+            "bhIaCgZza2lsbHMYAyADKAsyCi5hcGkuU2tpbGwSGAoFc3RhdHMYBCADKAsy",
+            "CS5hcGkuU3RhdBINCgVjbGFzcxgFIAEoCSIjCgRTdGF0EgwKBG5hbWUYASAB",
+            "KAkSDQoFdmFsdWUYAiABKA0iJQoFU2tpbGwSDAoEbmFtZRgBIAEoCRIOCgZw",
+            "b2ludHMYAiABKA0iSAoGQ29ycHNlEgwKBG5hbWUYASABKAkSDwoHaG92ZXJl",
+            "ZBgCIAEoCBIfCghwb3NpdGlvbhgDIAEoCzINLmFwaS5Qb3NpdGlvbiKGAQoG",
+            "U3RhdHVzEgwKBGxpZmUYASABKA0SEAoIbWF4X2xpZmUYAiABKA0SDAoEbWFu",
+            "YRgDIAEoDRIQCghtYXhfbWFuYRgEIAEoDRISCgptZXJjX2FsaXZlGAUgASgI",
+            "EhEKCW1lcmNfbGlmZRgGIAEoDRIVCg1tZXJjX21heF9saWZlGAcgASgNIiAK",
+            "CFBvc2l0aW9uEgkKAXgYASABKAISCQoBeRgCIAEoAjIuCgxNYXBBc3Npc3RB",
+            "cGkSHgoHR2V0RGF0YRIGLmFwaS5SGgkuYXBpLkRhdGEiAEI6WiJnaXRodWIu",
+            "Y29tL2hlY3RvcmdpbWVuZXova29vbG8vYXBpqgITa29vbG8ubWFwYXNzaXN0",
+            "LmFwaWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -74,7 +75,7 @@ namespace koolo.mapassist.api {
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.MenuOpen), global::koolo.mapassist.api.MenuOpen.Parser, new[]{ "Inventory", "NpcInteract", "NpcShop", "Stash", "Waypoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.CollisionGrid), global::koolo.mapassist.api.CollisionGrid.Parser, new[]{ "Walkable" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.NPC), global::koolo.mapassist.api.NPC.Parser, new[]{ "Name", "Positions" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.Monster), global::koolo.mapassist.api.Monster.Parser, new[]{ "Name", "Position", "Hovered", "Immunities", "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.Monster), global::koolo.mapassist.api.Monster.Parser, new[]{ "Name", "Position", "Hovered", "Immunities", "Type", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.Object), global::koolo.mapassist.api.Object.Parser, new[]{ "Name", "Position", "Hovered", "Selectable", "Chest" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.Item), global::koolo.mapassist.api.Item.Parser, new[]{ "Id", "Position", "Name", "Hovered", "Place", "Quality", "Ethereal", "Stats", "Identified", "VendorName" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::koolo.mapassist.api.PlayerUnit), global::koolo.mapassist.api.PlayerUnit.Parser, new[]{ "Name", "Position", "Skills", "Stats", "Class" }, null, null, null, null),
@@ -2080,6 +2081,7 @@ namespace koolo.mapassist.api {
       hovered_ = other.hovered_;
       immunities_ = other.immunities_.Clone();
       type_ = other.type_;
+      id_ = other.id_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2148,6 +2150,18 @@ namespace koolo.mapassist.api {
       }
     }
 
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 6;
+    private int id_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int Id {
+      get { return id_; }
+      set {
+        id_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2168,6 +2182,7 @@ namespace koolo.mapassist.api {
       if (Hovered != other.Hovered) return false;
       if(!immunities_.Equals(other.immunities_)) return false;
       if (Type != other.Type) return false;
+      if (Id != other.Id) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2180,6 +2195,7 @@ namespace koolo.mapassist.api {
       if (Hovered != false) hash ^= Hovered.GetHashCode();
       hash ^= immunities_.GetHashCode();
       if (Type.Length != 0) hash ^= Type.GetHashCode();
+      if (Id != 0) hash ^= Id.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2215,6 +2231,10 @@ namespace koolo.mapassist.api {
         output.WriteRawTag(42);
         output.WriteString(Type);
       }
+      if (Id != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Id);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2242,6 +2262,10 @@ namespace koolo.mapassist.api {
         output.WriteRawTag(42);
         output.WriteString(Type);
       }
+      if (Id != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Id);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2264,6 +2288,9 @@ namespace koolo.mapassist.api {
       size += immunities_.CalculateSize(_repeated_immunities_codec);
       if (Type.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Type);
+      }
+      if (Id != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2292,6 +2319,9 @@ namespace koolo.mapassist.api {
       immunities_.Add(other.immunities_);
       if (other.Type.Length != 0) {
         Type = other.Type;
+      }
+      if (other.Id != 0) {
+        Id = other.Id;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2331,6 +2361,10 @@ namespace koolo.mapassist.api {
             Type = input.ReadString();
             break;
           }
+          case 48: {
+            Id = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -2367,6 +2401,10 @@ namespace koolo.mapassist.api {
           }
           case 42: {
             Type = input.ReadString();
+            break;
+          }
+          case 48: {
+            Id = input.ReadInt32();
             break;
           }
         }

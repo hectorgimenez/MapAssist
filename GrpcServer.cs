@@ -139,6 +139,7 @@ namespace MapAssist
                 if (m is UnitMonster monster)
                 {
                     var protoMonster = new Monster();
+                    protoMonster.Id = (int)monster.UnitId;
                     protoMonster.Name = ((Npc)monster.TxtFileNo).Name();
                     protoMonster.Type = monster.MonsterType.ToString();
 

@@ -58,6 +58,7 @@ message Monster {
   bool hovered = 3;
   repeated string immunities = 4;
   string type = 5;
+  int32 id = 6;
 }
 
 message Object {
