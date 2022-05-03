@@ -147,7 +147,7 @@ namespace MapAssist
                     {
                         foreach (KeyValuePair<string, string> unique in Types.NPC.SuperUniques)
                         {
-                            if (unique.Value == monster.MonsterStats.Name)
+                            if (unique.Value == System.Text.Encoding.UTF8.GetString(monster.MonsterStats.Name))
                             {
                                 protoMonster.Name = unique.Key;
                             }
