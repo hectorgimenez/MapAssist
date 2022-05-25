@@ -1,6 +1,5 @@
-using AutoUpdaterDotNET;
-using Gma.System.MouseKeyHook;
 using MapAssist.Helpers;
+using AutoUpdaterDotNET;
 using MapAssist.Settings;
 using NLog;
 using System;
